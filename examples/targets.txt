@@ -1,0 +1,3 @@
+# Replace these sample URLs with explicitly authorized applications or environments.
+https://test.example.org/
+https://intranet.example.org/index.php

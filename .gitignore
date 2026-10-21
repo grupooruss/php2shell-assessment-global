@@ -1,0 +1,9 @@
+# Never commit assessment results, client data, or local environments.
+reports/
+*.log
+__pycache__/
+.pytest_cache/
+.venv/
+venv/
+.DS_Store
+*.pyc

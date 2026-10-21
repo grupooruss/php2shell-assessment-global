@@ -1,0 +1,4 @@
+asset,php_version,distro_package,notes
+web-qa.example.internal,8.4.26,php8.4-fpm,Illustrative authorized-inventory entry
+web-legacy.example.internal,7.4.33,php7.4-fpm,Illustrative end-of-life runtime
+web-unidentified.example.internal,,,Version not yet confirmed
