@@ -6,9 +6,6 @@ A **non-intrusive inventory and remediation-prioritization tool** for the PHP se
 
 **No exploitation is performed.** The tool does not send RCE payloads, attempt authentication, modify remote systems, brute-force accounts, or claim to prove exploitability.
 
-> [!IMPORTANT]
-> **Advisory snapshot — October 21, 2026, 12:30 UTC:** At the time this initial configuration was prepared, PHP had announced an upcoming security release scheduled for **14:00 UTC**, but the official affected-version and fixed-version matrix had not yet been validated for inclusion. Accordingly, `advisory.json` starts with `release_status: "pending"` and no patch thresholds. **Review the latest official PHP advisories before publishing exposure claims or using the tool for a customer advisory.** This is a historical snapshot, not a live advisory feed.
-
 ## Features
 
 - **Authorized HTTP checks:** Assess individual URLs or batches via `HEAD`, with a `GET` fallback when no PHP version is disclosed. Checks HTTP headers only and does not inspect response bodies.
