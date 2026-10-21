@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "release_status": "pending",
+  "release_status": "published",
   "advisory_as_of_utc": "2026-10-21T12:30:00Z",
   "cves": [
     "CVE-2026-109618",
@@ -8,8 +8,10 @@
   ],
   "cvss_v4": 9.2,
   "scheduled_release_utc": "2026-10-21T14:00:00Z",
-  "minimum_fixed_versions": {},
-  "vendor_fix_reference": null,
+  "minimum_fixed_versions": { "8.2": "8.2.35",
+    "8.3": "8.3.36",
+    "8.4": "8.4.27",
+    "8.5": "8.5.12"},
+  "vendor_fix_reference": "https://www.php.net/archive/2026.php",
   "official_security_announcement": "https://www.php.net/archive/2026.php#2026-10-20-1",
-  "notes": "At the time of this initial snapshot, the official announcement did not yet include a verified affected-version or fixed-version matrix. Do not set thresholds until checking the official PHP security release."
-}
+  }
