@@ -87,27 +87,6 @@ On Linux/macOS, replace `py -3` with `python3`.
 - A version comparison alone cannot demonstrate remote reachability, configuration-dependent preconditions, or RCE exploitability.
 - For production decisions, prefer authenticated package inventories, PHP-FPM/runtime inspection, operating-system security bulletins, and vendor advisories.
 
-## Updating patch thresholds after the official release
-
-1. Check the **official PHP security releases** for each maintained branch, including affected versions, fixed versions, and any applicable preconditions.
-2. Edit `advisory.json`: set `release_status` to `"published"` and populate `minimum_fixed_versions` **only with verified upstream versions**. Each value must be a complete numeric PHP version such as `8.4.X` with `X` replaced by the actual official patch number.
-3. Set `vendor_fix_reference` to the official HTTPS advisory or release URL.
-4. Reassess authorized services or trusted inventory files; verify the runtime version and restart requirements after applying patches.
-5. For vendor-backported fixes, document the package-specific evidence in `distro_package` and `notes`. **The tool does not automatically mark backported packages as fixed.**
-
-Example configuration structure (illustrative placeholders; **do not paste as a working advisory**):
-
-```json
-{
-  "release_status": "published",
-  "minimum_fixed_versions": {
-    "8.4": "8.4.X"
-  },
-  "vendor_fix_reference": "https://www.php.net/"
-}
-```
-
-The example above is **not a valid fixed-version entry**. Use real, verified version numbers and keep all required fields from the existing `advisory.json`.
 
 ## Safety and operational scope
 
